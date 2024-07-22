@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Administrateur - Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Espace Administrateur</h1>
+        <section id="admin-actions">
+            <h2>Gestion des comptes</h2>
+            <form action="create_account.php" method="POST">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+                <label for="role">Rôle:</label>
+                <select id="role" name="role">
+                    <option value="employee">Employé</option>
+                    <option value="veterinarian">Vétérinaire</option>
+                </select>
+                <button type="submit">Créer un compte</button>
+            </form>
+            <h2>Gestion des services</h2>
+            <!-- Formulaires pour ajouter, modifier, supprimer des services -->
+            <h2>Gestion des habitats</h2>
+            <!-- Formulaires pour ajouter, modifier, supprimer des habitats -->
+            <h2>Gestion des animaux</h2>
+            <!-- Formulaires pour ajouter, modifier, supprimer des animaux -->
+        </section>
+        <section id="reports">
+            <h2>Comptes rendus des vétérinaires</h2>
+            <!-- Interface pour filtrer et afficher les comptes rendus -->
+        </section>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <!-- Interface pour afficher les statistiques des consultations -->
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zoo Arcadia</p>
+    </footer>
+</body>
+</html>

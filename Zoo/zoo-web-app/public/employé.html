@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Espace Employé - Zoo Arcadia</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="connexion.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Espace Employé</h1>
+        <section id="reviews">
+            <h2>Validation des avis</h2>
+            <!-- Interface pour valider ou invalider les avis -->
+        </section>
+        <section id="services">
+            <h2>Modification des services</h2>
+            <!-- Interface pour modifier les services -->
+        </section>
+        <section id="food-consumption">
+            <h2>Consommation de nourriture</h2>
+            <form action="submit_food.php" method="POST">
+                <label for="animal">Animal:</label>
+                <input type="text" id="animal" name="animal" required>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+                <label for="time">Heure:</label>
+                <input type="time" id="time" name="time" required>
+                <label for="food">Nourriture:</label>
+                <input type="text" id="food" name="food" required>
+                <label for="quantity">Quantité:</label>
+                <input type="number" id="quantity" name="quantity" required>
+                <button type="submit">Soumettre</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Zoo Arcadia</p>
+    </footer>
+</body>
+</html>
